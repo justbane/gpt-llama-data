@@ -13,6 +13,6 @@ car_query_eng = PandasQueryEngine(df=car_df, verbose=True, instruction_str=instr
 car_query_eng.update_prompts({
     'pandas_prompt': new_prompt
 })
-car_query_eng.query("What makes of cars are available")
+car_query_eng.query("Show me all the unique models of Kia available")
 
 # print(car_df.head())
