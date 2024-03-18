@@ -1,3 +1,4 @@
-data/*.csv
 .venv
 .env
+data/*.csv
+passenger_car_info
