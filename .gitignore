@@ -1,4 +1,5 @@
 .venv
 .env
+__pycache__
 data/*.csv
 passenger_car_info
