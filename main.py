@@ -38,8 +38,12 @@ tools = [
 ]
 
 llm = OpenAI(model="gpt-3.5-turbo-0125")
-agent = ReActAgent.from_tools(tools, llm=llm, verbose=True, context=context)
+agent = ReActAgent.from_tools(tools, llm=llm, verbose=False, context=context)
 
 while (prompt := input("Enter a prompt (q to quit): ")) != "q":
-    result = agent.query(prompt)
+    try:
+        result = agent.query(prompt)
+    except ValueError:
+        result = print("Oops! There was error with your request. Try again!")
+    
     print(result)

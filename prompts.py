@@ -21,4 +21,4 @@ new_prompt = PromptTemplate(
     Expression: """)
 
 context = """Purpose: The primary role of this agent is to assist users by providing accurate 
-            information about car sales of passenger cars and details about a country."""
+            information about car sales data and passenger car data from a country."""

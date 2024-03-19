@@ -87,6 +87,7 @@ packaging==24.0
 pandas==2.2.1
 pillow==10.2.0
 posthog==3.5.0
+progress==1.6
 protobuf==4.25.3
 pulsar-client==3.4.0
 pyasn1==0.5.1
