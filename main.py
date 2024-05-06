@@ -14,8 +14,9 @@ import matplotlib
 
 car_data = os.path.join("data","car_prices.csv")
 car_df = pd.read_csv(car_data)
+pd.set_option('display.max_rows', None)
 
-car_query_eng = PandasQueryEngine(df=car_df)
+car_query_eng = PandasQueryEngine(df=car_df, instruction_str="Display the results as html.")
 # car_query_eng = PandasQueryEngine(df=car_df, verbose=False, instruction_str=instruction_str, synthesize_response=True)
 # car_query_eng.update_prompts({
     # 'pandas_prompt': new_prompt
